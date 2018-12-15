@@ -1,0 +1,94 @@
+nav {
+   position: fixed;
+   width: 100%;
+   z-index: 100;
+   // position: relative;
+   // position: fixed;
+   // width: 100%;
+   // border: 1px solid black;
+   // ul {
+   //    @include flex(column);
+   // }
+}
+
+.main-nav {
+  &__circle {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: $accent2;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  &__hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+    &:after,
+    &:before {
+      transition: .5s ease-in-out;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+    &:before {
+      top: -10px;
+    } 
+    &:after {
+      bottom: -10px;
+    }
+  }
+  input {
+    display: none;
+  }
+  input:checked + &__circle {
+    box-shadow: 0 0 0 50vw $accent2, 0 0 0 50vh $accent2;
+    border-radius: 100%;
+    &__hamburger {
+      transform: rotate(45deg);
+      &:after {
+        transform: rotate(90deg);
+        bottom: 0;
+      }
+      &:before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+    }
+  }
+
+   input:checked + &__circle + &__menu {
+      opacity: 1;
+      transition: all 0.8s ease-in-out;
+   }
+   
+   &__menu {
+      z-index: 200;
+      position: absolute;
+      top: 50vh;
+      left: 80%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      &--link {
+         margin-bottom: 25px;
+         display: block;
+         color: $secondary;
+      }
+   }
+
+}

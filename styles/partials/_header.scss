@@ -1,26 +1,43 @@
 .header {
    @include flex(column);
+   align-items: flex-start;
    height: 100vh;
-   background: $white;
-   // background: url(../assets/newPicture2.png);
-   // background-size: 30%;
+   // background: $white;  
+   background-color: #ddd6f3;
+   // background-image: url(../assets/oldheadshot-tp.png);
+   // background-size: 250px;
    // background-repeat: no-repeat;
-   // background-position: bottom right;
+   // background-position: top 50px center;
+   &__content {
+      margin: 20vh auto 0 auto;
+   }
    &__h1 {
-      @include heading-font(70);
+      @include heading-font(90);
       margin: 0;
       text-align: center;
       position: relative;
       z-index: 1;
+      color: $secondary;
       &::before {
          content: "";
          position: absolute;
-         height: 30px;
+         top: -200px;
+         left: -150px;
+         width: 400px;
+         height: 400px;
+         background: $accent3; 
+         border-radius: 64% 36% 26% 74% / 40% 63% 37% 60%;
+         z-index: -1;
+      }
+      &::after {
+         content: "";
+         position: absolute;
          margin: 0 0 0 auto;
          left: 0;
          right: 0;
          bottom: 5px;
-         width: 70%;
+         height: 40px;
+         width: 65%;
          background: $accent1;
          opacity: 0.5;
          z-index: -1;
@@ -32,5 +49,12 @@
       text-align: right;
    }
 }
+
+// .shape { 
+//    width: 500px;
+//    height: 500px;
+//    clip-path: circle(50% at 50% 50%);
+
+// }
 
 
