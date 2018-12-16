@@ -19,7 +19,7 @@ nav {
     z-index: 100;
     width: 200px;
     height: 200px;
-    background: $accent2;
+    background: rgba(206, 242, 242, 0.5);
     border-radius: 50%;
     transition: .5s ease-in-out;
     cursor: pointer;
@@ -35,6 +35,7 @@ nav {
     display: block;
     transform-origin: center;
     transition: .5s ease-in-out;
+    border-radius: 50px;
     &:after,
     &:before {
       transition: .5s ease-in-out;
@@ -56,17 +57,17 @@ nav {
     display: none;
   }
   input:checked + &__circle {
-    box-shadow: 0 0 0 50vw $accent2, 0 0 0 50vh $accent2;
+    box-shadow: 0 0 0 60vw $accent3, 0 0 0 60vh $accent3;
     border-radius: 100%;
-    &__hamburger {
+    .main-nav__hamburger {
       transform: rotate(45deg);
-      &:after {
-        transform: rotate(90deg);
-        bottom: 0;
-      }
       &:before {
-        transform: rotate(90deg);
-        top: 0;
+         transform: rotate(90deg);
+         top: 0;
+      }
+      &:after {
+         transform: rotate(90deg);
+         bottom: 0;
       }
     }
   }
@@ -84,10 +85,25 @@ nav {
       transform: translate(-50%,-50%);
       opacity: 0;
       transition: all 0.3s ease-in-out;
+      @include flex(column);
       &--link {
-         margin-bottom: 25px;
+         @include heading-font(30);
+         position: relative;
          display: block;
+         margin-bottom: 15px;
+         padding: 15px 40px;
          color: $secondary;
+         &:hover:after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 15px;
+            width: 40px;
+            height: 40px;
+            background: $accent1; 
+            border-radius: 64% 36% 26% 74% / 40% 63% 37% 60%;
+            z-index: -1;
+         }
       }
    }
 
