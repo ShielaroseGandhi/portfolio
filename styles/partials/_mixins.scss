@@ -16,7 +16,7 @@
    flex-direction: $column-or-row;
 }
 
-@mixin animation($sec){
+@mixin shape-animation($sec){
    animation: spin $sec linear infinite;
    @keyframes spin { 
       100% { 

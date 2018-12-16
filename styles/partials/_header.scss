@@ -4,12 +4,7 @@
    height: 100vh;
    // background-color: #ddd6f3;
    background: #ddd6f3;  /* fallback for old browsers */
-background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-   // background-image: url(../assets/oldheadshot-tp.png);
-   // background-size: 250px;
-   // background-repeat: no-repeat;
-   // background-position: top 50px center;
+   // background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.5) 100%); 
    &__content {
       margin: 0 auto;
    }
@@ -19,7 +14,7 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
       text-align: center;
       position: relative;
       z-index: 1;
-      color: $secondary;
+      color: $black;
       &::before {
          content: "";
          position: absolute;
@@ -45,16 +40,15 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
          z-index: -1;
       }
    }
+   &__intro,
    &__description {
       @include body-font(30);
       margin: 0;
-      display: block;
+   }
+   &__description {
       text-align: right;
-      white-space: pre;
    }
    &__intro {
-      @include body-font(30);
-      margin: 0;
       text-align: left;
       position: relative;
       z-index: 4;
@@ -73,7 +67,7 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
          border-bottom: 25px solid $secondary;
          opacity: 0.4;
          transform: rotate(-30deg);
-         @include animation(8s);
+         @include shape-animation(8s);
       }
       &--circle{
          position: relative;
@@ -85,7 +79,7 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
          background: $secondary;
          opacity: 0.6;
          z-index: 3;
-         @include animation(10s);
+         @include shape-animation(10s);
          transform-origin: 0%;
       }
       &--square{
@@ -97,7 +91,7 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
          border: 3px solid $secondary;
          opacity: 0.5;
          z-index: 3;
-         @include animation(20s);
+         @include shape-animation(20s);
          transform-origin: 10%;
       }
       &--squiggle{
@@ -109,7 +103,7 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
          opacity: 0.5;
          z-index: 3;
          overflow: hidden;
-         @include animation(25s);
+         @include shape-animation(25s);
       }
       .line {
          position: absolute;
@@ -133,22 +127,22 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
 
 // Typed JS blinking cursor
 
-// .typed::after {
-//    content: '|';
-//    display: inline;
-//    animation: blink 1s infinite;
-// }
+.typed::after {
+   content: '|';
+   display: inline;
+   animation: blink 1s infinite;
+}
 
-// @keyframes blink {
-//     0% { opacity: 1; }
-//     50% { opacity: 0; }
-//     100% { opacity: 1; }
-// }
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
-// .typed-cursor{
-//    opacity: 0;
-// 	display: none;
-// }
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
 
 
 

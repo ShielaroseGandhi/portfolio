@@ -2,7 +2,7 @@
 let typed = new Typed(".typed", {
    strings: ["I'm a front-end web developer"],
    stringsElement: null,
-   startDelay: 1200,
+   startDelay: 1500,
    typeSpeed: 50,
    backSpeed: 50,
    smartBackspace: true,
