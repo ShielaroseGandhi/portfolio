@@ -162,12 +162,21 @@ img {
 
 body {
   font-size: 2rem;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: whitesmoke; }
 
 .wrapper {
   max-width: 1280px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto; }
+
+section {
+  padding: 75px 0 50px 0; }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-size: 4rem; }
 
 nav {
   position: fixed;
@@ -479,3 +488,49 @@ input:checked + .main-nav__circle + .main-nav__menu {
 .typed-cursor {
   opacity: 0;
   display: none; }
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.about__img-container {
+  width: 25%;
+  float: left; }
+
+.about__inner-content {
+  width: 75%;
+  padding-right: 50px;
+  text-align: left;
+  position: relative; }
+
+.about__h2 {
+  margin: 25px 0 0 0; }
+  .about__h2:before {
+    content: "about";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 170px;
+    font-size: 17rem;
+    color: #ffb4a4;
+    position: absolute;
+    top: -90px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.2; }
+
+.about__description {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  vertical-align: middle; }

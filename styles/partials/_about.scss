@@ -1,0 +1,33 @@
+.about {
+   &__content {
+      @include flex(row-reverse);
+   }
+   &__img-container {
+      width: 25%;
+      float: left;
+   }
+   &__inner-content {
+      width: 75%;
+      padding-right: 50px;
+      text-align: left;
+      position: relative;
+   }
+   &__h2 {
+      margin: 25px 0 0 0;
+      &:before {
+         content: "about";
+         @include heading-font(170);
+         color: $accent1;
+         position: absolute;
+         top: -90px;
+         left: 0px;
+         z-index: -1;
+         opacity: 0.2;
+      }
+   }
+   &__description {
+      @include body-font(16);
+      line-height: 1.5;
+      vertical-align: middle;
+   }
+}
