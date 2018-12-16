@@ -96,8 +96,8 @@ nav {
          &:hover:after {
             content: "";
             position: absolute;
-            top: 0px;
-            left: 15px;
+            top: 10px;
+            left: 20px;
             width: 40px;
             height: 40px;
             background: $accent1; 

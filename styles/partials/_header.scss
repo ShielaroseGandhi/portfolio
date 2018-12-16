@@ -50,6 +50,7 @@ background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.9) 10
       margin: 0;
       display: block;
       text-align: right;
+      white-space: pre;
    }
    &__intro {
       @include body-font(30);

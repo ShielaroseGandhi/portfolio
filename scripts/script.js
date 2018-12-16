@@ -1,6 +1,6 @@
 // Doc Ready
 let typed = new Typed(".typed", {
-   strings: [`I'm a front-end web developer.`],
+   strings: ["I'm a front-end web developer"],
    stringsElement: null,
    startDelay: 1200,
    typeSpeed: 50,
@@ -12,8 +12,8 @@ let typed = new Typed(".typed", {
    showCursor: false,
    cursorChar: '|',
    autoInsertCss: true,
+   callback: function() {}
 });
-
 $(function(){
    // uncheck checkbox when link in nav is clicked
    $(".main-nav__menu--link").on("click", function(){
