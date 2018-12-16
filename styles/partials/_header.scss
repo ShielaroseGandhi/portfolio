@@ -14,7 +14,7 @@
       text-align: center;
       position: relative;
       z-index: 1;
-      color: $black;
+      color: $secondary;
       &::before {
          content: "";
          position: absolute;
@@ -44,6 +44,7 @@
    &__description {
       @include body-font(30);
       margin: 0;
+      color: $secondary;
    }
    &__description {
       text-align: right;
@@ -64,7 +65,7 @@
          height: 0; 
          border-left: 15px solid transparent; 
          border-right: 15px solid transparent; 
-         border-bottom: 25px solid $secondary;
+         border-bottom: 25px solid $primary;
          opacity: 0.4;
          transform: rotate(-30deg);
          @include shape-animation(8s);
@@ -76,7 +77,7 @@
          width: 25px; 
          height: 25px; 
          border-radius: 50%;
-         background: $secondary;
+         background: $accent3;
          opacity: 0.6;
          z-index: 3;
          @include shape-animation(10s);
