@@ -49,13 +49,119 @@
    <main>
       <!-- ABOUT SECTION -->
       <section class="about" id="about">
-         <div class="wrapper about__content clearfix">
-            <div class="about__img-container">
-               <img src="./assets/old-headshot2.png" alt="A headshot of me" class="about__img">
-            </div>
+         <div class="wrapper about__content">
             <div class="about__inner-content">
                <h2 class="about__h2">about me</h2>
                <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in iste inventore et vero necessitatibus numquam velit! Harum vitae culpa laudantium, voluptate ipsa iusto minus fugiat quibusdam quos ratione amet illum nam voluptatibus aliquid error maxime quis provident laboriosam recusandae fuga impedit cupiditate in. Officia in consequuntur nam, corporis illo cumque reprehenderit tempora distinctio unde fugit voluptatibus quo ea ratione accusantium placeat. Quod minima consequuntur nihil, sequi cupiditate accusamus corrupti a alias esse, et nulla harum quisquam quasi natus unde fuga tempora? In nesciunt sint doloribus quam dolores quia ducimus sed quo assumenda nobis! Sapiente minima dolorum modi consequuntur iste!</p>
+            </div>
+            <div class="about__img-container">
+               <img src="./assets/old-headshot2.png" alt="A headshot of me" class="about__img">
+            </div>
+         </div>
+      </section>
+
+      <div class="shapes--squiggle">
+         <div class="line line1"></div>
+         <div class="line line2"></div>
+      </div>
+
+      <!-- PORTFOLIO -->
+      <section class="portfolio" id="portfolio">
+         <div class="wrapper portfolio__content">
+            <h2 class="portfolio__h2">portfolio</h2>
+
+            <!-- Project - Meteor -->
+            <div class="portfolio__project portfolio__project--1">
+               <!-- Image with video -->
+               <div class="portfolio__img-container">
+                  <!-- Desktop img -->
+                  <img class="portfolio__desktop" src="./assets/desktop.png" alt="">
+                  <!-- Phone img -->
+                  <img class="portfolio__mobile" src="./assets/meateor-mobile.png" alt="screenshot of my game, meateor, on a cell phone">
+                  <!-- Video -->
+                  <div class="portfolio__video-container">
+                     <img class="portfolio__screenshot" src="./assets/meateor-img.png" alt="screenshot of my game, meateor">
+                     <video class="hidden" src="./assets/meateor.mp4" autoplay muted>
+                        <img src="./assets/meateor-img.png" alt="screenshot of my game, meateor">
+                     </video>
+                  </div>
+               </div>
+
+               <!-- Project Description for Meteor -->
+               <div class="portfolio__inner-content">
+                  <h3 class="portfolio__h3">Meateor</h3>
+                  <p class="portfolio__checklist">JavaScript / jQuery / HTML5 / SCSS / Responsive</p>
+                  <p class="portfolio__description">Save the dinosaurs from going extinct by avoiding the meteors and catching the steaks. Using HTML Canvas and JavaScript, I wanted to challenge myself and create a game that used collision detection.</p>
+                  <div class="portfolio__links">
+                     <a href="http://www.shielarosegandhi.com/meateor/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
+                     <a href="https://github.com/ShielaroseGandhi/shielarose_gandhi_project3" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Project - gofundmywedding -->
+            <div class="portfolio__project portfolio__project--2 portfolio__project--right">
+               <div class="portfolio__img-container">
+
+               </div>
+
+               <!-- Project description for gofundmywedding -->
+               <div class="portfolio__inner-content portfolio__inner-content--right">
+                  <h3 class="portfolio__h3">gofundmywedding</h3>
+                  <p class="portfolio__checklist">React / JavaScript / Firebase / SCSS / Pair Programming / Responsive</p>
+                  <p class="portfolio__description">Client request. Couples can create their own wedding registries and contribute to existing registries upon authentication. Made in collaboration with Marc Brathwaite and Janet Bird.</p>
+                  <div class="portfolio__links">
+                     <a href="https://go-fund-my-wedding.firebaseapp.com/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
+                     <a href="https://github.com/ShielaroseGandhi/shielarose_Janet_Marc_Project6" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Project - SmartyPants -->
+            <div class="portfolio__project portfolio__project--3">
+               <div class="portfolio__img-container">
+
+               </div>
+               <div class="portfolio__inner-content">
+                  <h3 class="portfolio__h3">SmartyPants</h3>
+                  <p class="portfolio__checklist">JavaScript / jQuery / API / HTML5 / SCSS / Pair Programming / Responsive</p>
+                  <p class="portfolio__description">Using the OpenTrivia API, users may choose a category and complete a quiz to see if they are the ultimate SmartyPants. Made in collaboration with Sam Sakhavarz.</p>
+                  <div class="portfolio__links">
+                     <a href="http://www.shielarosegandhi.com/meateor/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
+                     <a href="https://github.com/ShielaroseGandhi/shielarose_gandhi_project3" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio__project portfolio__project--4 portfolio__project--right">
+               <div class="portfolio__img-container">
+
+               </div>
+               <div class="portfolio__inner-content portfolio__inner-content--right">
+                  <h3 class="portfolio__h3">Harper</h3>
+                  <p class="portfolio__checklist">PSD Conversion / HTML5 / SCSS / BEM / Flexbox</p>
+                  <p class="portfolio__description">
+                     Multi-page responsive client website. This website was built with BEM naming convention used throughout. See the original designs 
+                     <a href="http://www.shielarosegandhi.com/Harper-designs">here</a>.
+                  </p>
+                  <div class="portfolio__links">
+                     <a href="http://www.shielarosegandhi.com/meateor/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
+                     <a href="https://github.com/ShielaroseGandhi/shielarose_gandhi_project3" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio__project portfolio__project--5">
+               <div class="portfolio__img-container">
+
+               </div>
+               <div class="portfolio__inner-content">
+                  <h3 class="portfolio__h3">Noted</h3>
+                  <p class="portfolio__checklist"></p>
+                  <p class="portfolio__description"></p>
+                  <div class="portfolio__links">
+                     <a href="http://www.shielarosegandhi.com/meateor/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
+                     <a href="https://github.com/ShielaroseGandhi/shielarose_gandhi_project3" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
+                  </div>
+               </div>
             </div>
          </div>
       </section>

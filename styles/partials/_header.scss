@@ -2,11 +2,10 @@
    @include flex(column);
    align-items: flex-start;
    height: 100vh;
-   // background-color: #ddd6f3;
-   background: #ddd6f3;  /* fallback for old browsers */
-   // background: linear-gradient(to top right,#ddd6f3 60%, rgba(206, 242, 242,0.5) 100%); 
+   background: #ddd6f3;
+   background: linear-gradient(to top right,#ddd6f3 10%, $accent3 100%); 
    &__content {
-      margin: 0 auto;
+      margin: -80px auto 0 auto;
    }
    &__h1 {
       @include heading-font(90);
@@ -14,7 +13,6 @@
       text-align: center;
       position: relative;
       z-index: 1;
-      color: $secondary;
       &::before {
          content: "";
          position: absolute;
@@ -59,7 +57,7 @@
    &__shapes {
       &--triangle {
          position: relative;
-         top: 20px;
+         top: 0px;
          left: 850px;
          width: 0; 
          height: 0; 
@@ -72,12 +70,12 @@
       }
       &--circle{
          position: relative;
-         top: 280px;
+         top: 190px;
          left: 350px;
          width: 25px; 
          height: 25px; 
          border-radius: 50%;
-         background: $accent3;
+         background: darken($accent3, 10%);
          opacity: 0.6;
          z-index: 3;
          @include shape-animation(10s);
@@ -85,7 +83,7 @@
       }
       &--square{
          position: relative;
-         top: 250px;
+         top: 200px;
          left: 1000px;
          width: 25px; 
          height: 25px; 
@@ -97,7 +95,7 @@
       }
       &--squiggle{
          position: relative;
-         top: -100px;
+         top: -160px;
          left: 60px;
          width: 80px; 
          height: 11px; 

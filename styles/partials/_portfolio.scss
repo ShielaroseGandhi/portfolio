@@ -1,0 +1,125 @@
+.portfolio {
+   position: relative;
+   background: rgba(31, 14, 73, 0.04);
+   &:before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      width: 100%;
+      border-width: 0 0 100px 100vw;
+      border-style: solid;
+      border-color: transparent transparent rgba(31, 14, 73, 0.04) transparent;
+   }
+   &__content {
+      @include flex(column);
+      position: relative;
+   }
+   &__h2 {
+      width: 100%;
+      text-align: right;
+      margin: 50px 0;
+      &:before {
+         content: "portfolio";
+         @include heading-font(170);
+         color: $accent1;
+         position: absolute;
+         top: -65px;
+         right: 0px;
+         z-index: -1;
+         opacity: 0.3;
+      }
+   }
+   &__project {
+      @include flex(row-reverse);
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      margin: 100px 0;
+      &--right {
+         flex-direction: row;
+         text-align: right;
+      }
+   }
+   &__img-container {
+      position: relative;
+      margin: 0;
+      max-width: 450px;
+   }
+   &__mobile {
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      width: 100px;
+      z-index: 1;
+   }
+   &__video-container {
+      position: absolute;
+      top: 28px;
+      left: 22px;
+      max-width: 597px;
+      max-height: 342px;
+      width: 90.13%;
+      line-height: 0;
+   }
+   &__inner-content {
+      @include flex(column);
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: calc(100% - 450px);
+      padding-right: 50px;
+      &--right {
+         align-items: flex-end;
+      }
+   }
+   &__h3 {
+      margin: 0;
+   }
+   &__links {
+      @include flex(row);
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+   }
+   &__a {
+      @include button($secondary);
+   }
+}
+
+.portfolio__screenshot,
+video {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.hidden {
+   display: none;
+}
+
+// .shapes--squiggle {
+//    position: relative;
+//    top: -45px;
+//    left: 50%;
+//    transform: translateX(-50%) rotate(-90deg);
+//    width: 70px; 
+//    height: 11px; 
+//    opacity: 0.5;
+//    z-index: 10;
+//    overflow: hidden;
+//    .line {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 80px;
+//       height: 11px;
+//    }
+//    .line1 {
+//       background: linear-gradient(45deg, transparent, transparent 47%, $primary 47%, transparent 53%);
+//    }
+//    .line2 {
+//       background: linear-gradient(-45deg, transparent, transparent 47%, $primary 47%, transparent 53%);
+//    }
+//    .line {
+//       background-size: 20px 20px;
+//    }
+// }

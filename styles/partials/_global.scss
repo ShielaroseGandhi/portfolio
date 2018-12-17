@@ -11,9 +11,20 @@ body {
 }
 
 section {
-   padding: 75px 0 50px 0;
+   padding: 50px 0 125px 0;
 }
 
 h2 {
    @include heading-font(40);
+   color: $black;
+}
+
+h3 {
+   @include heading-font(30);
+   color: $black;
+}
+
+p {
+   @include body-font(19);
+   line-height: 1.5;
 }
