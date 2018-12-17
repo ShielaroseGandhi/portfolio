@@ -680,6 +680,33 @@ input:checked + .main-nav__circle + .main-nav__menu {
       align-items: flex-end; }
   .portfolio__h3 {
     margin: 0; }
+  .portfolio__description span {
+    display: block; }
+    .portfolio__description span a {
+      color: #d61a4c;
+      text-decoration: none;
+      position: relative; }
+      .portfolio__description span a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        bottom: 0;
+        left: 0;
+        background-color: #ffb4a4;
+        opacity: 0;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        z-index: -1; }
+      .portfolio__description span a:hover:after {
+        opacity: 0.5;
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); }
   .portfolio__links {
     display: -webkit-box;
     display: -ms-flexbox;
