@@ -1,0 +1,10 @@
+footer {
+   background: rgba(221, 214, 243, 0.2);
+   p {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+      color: $grey;
+      @include body-font(14);
+   }
+}

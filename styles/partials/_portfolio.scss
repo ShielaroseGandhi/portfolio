@@ -1,6 +1,6 @@
 .portfolio {
    position: relative;
-   background: rgba(31, 14, 73, 0.04);
+   background: rgba(221, 214, 243, 0.2);
    &:before {
       content: "";
       position: absolute;
@@ -8,7 +8,7 @@
       width: 100%;
       border-width: 0 0 100px 100vw;
       border-style: solid;
-      border-color: transparent transparent rgba(31, 14, 73, 0.04) transparent;
+      border-color: transparent transparent rgba(221, 214, 243, 0.2) transparent;
    }
    &__content {
       @include flex(column);

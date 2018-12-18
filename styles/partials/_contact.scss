@@ -1,0 +1,81 @@
+.contact {
+   position: relative;
+   background: rgba(221, 214, 243, 0.2);
+   padding-bottom: 75px;
+   &:before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      width: 100%;
+      border-width: 0 0 100px 100vw;
+      border-style: solid;
+      border-color: transparent transparent rgba(221, 214, 243, 0.2) transparent;
+   }
+   &__content {
+      position: relative;
+   }
+   &__h2 {
+      width: 100%;
+      text-align: right;
+      margin: 50px 0 75px 0;
+      &:before {
+         content: "contact";
+         @include heading-font(170);
+         color: $secondary;
+         position: absolute;
+         top: -110px;
+         right: 0px;
+         z-index: -1;
+         opacity: 0.1;
+      }
+   }
+   &__inner-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__social {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+   }
+   &__icon {
+      text-align: center;
+      width: 25%;
+      margin-right: 50px;
+      margin-bottom: 50px;
+      &--link .fab {
+         font-size: 30px;   
+         color: $black; 
+      }
+   }
+   &__form {
+      display: flex;
+      width: 75%;
+      flex-direction: column;
+      @include body-font(16);
+   }
+   &__label {
+      margin: 10px 0 5px 0;
+   }
+   &__input {
+      @include body-font(16);
+      border: 1px solid $grey;
+      border-radius: 5px;
+      padding: 10px 10px;
+      &--message {
+         width: 100%;
+         resize: none;
+         position: relative;
+      }
+      &--submit {
+         @include button($secondary);
+         @include body-font(16);
+         margin-top: 20px;
+         width: 100%;
+         border: none;
+      }
+   }
+}
