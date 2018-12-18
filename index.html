@@ -80,8 +80,7 @@
                   <img class="portfolio__mobile" src="./assets/meateor-mobile.png" alt="screenshot of my game, meateor, on a cell phone">
                   <!-- Video -->
                   <div class="portfolio__video-container">
-                     <img class="portfolio__screenshot" src="./assets/meateor-img.png" alt="screenshot of my game, meateor">
-                     <video class="hidden" src="./assets/meateor.mp4" autoplay muted>
+                     <video class="video" src="./assets/meateor.mp4" preload="auto" poster="assets/meateor-img.png" muted>
                         <img src="./assets/meateor-img.png" alt="screenshot of my game, meateor">
                      </video>
                   </div>
@@ -102,14 +101,23 @@
             <!-- Project - gofundmywedding -->
             <div class="portfolio__project portfolio__project--2 portfolio__project--right">
                <div class="portfolio__img-container">
-
+                  <!-- Desktop img -->
+                  <img class="portfolio__desktop" src="./assets/desktop.png" alt="">
+                  <!-- Phone img -->
+                  <img class="portfolio__mobile portfolio__mobile--left" src="./assets/gfmw-mobile.png" alt="screenshot of the gofundmywedding app">
+                  <!-- Video -->
+                  <div class="portfolio__video-container">
+                     <video class="video" src="" preload="auto" poster="assets/gfmw-desktop.png" muted>
+                        <img src="./assets/gfmw-desktop.png" alt="screenshot of the gofundmywedding app">
+                     </video>
+                  </div>
                </div>
 
                <!-- Project description for gofundmywedding -->
                <div class="portfolio__inner-content portfolio__inner-content--right">
                   <h3 class="portfolio__h3">gofundmywedding</h3>
                   <p class="portfolio__checklist">React / JavaScript / Firebase / SCSS / Pair Programming / Responsive</p>
-                  <p class="portfolio__description">Client request. Couples can create their own wedding registries and contribute to existing registries upon authentication. Made in collaboration with Marc Brathwaite and Janet Bird.</p>
+                  <p class="portfolio__description">Client request. Couples can create their own wedding registries and contribute to existing registries upon authentication. Made in collaboration with <a href="http://brathworks.com/" class="group-members" target="_blank">Marc Brathwaite</a> and <a href="http://www.janetbird.io/" class="group-members" target="_blank">Janet Bird</a>.</p>
                   <div class="portfolio__links">
                      <a href="https://go-fund-my-wedding.firebaseapp.com/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
                      <a href="https://github.com/ShielaroseGandhi/shielarose_Janet_Marc_Project6" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
@@ -117,26 +125,21 @@
                </div>
             </div>
 
-            <!-- Project - SmartyPants -->
+            <!-- Project - Harper -->
             <div class="portfolio__project portfolio__project--3">
                <div class="portfolio__img-container">
-
-               </div>
-               <div class="portfolio__inner-content">
-                  <h3 class="portfolio__h3">SmartyPants</h3>
-                  <p class="portfolio__checklist">JavaScript / jQuery / API / HTML5 / SCSS / Pair Programming / Responsive</p>
-                  <p class="portfolio__description">Using the OpenTrivia API, users may choose a category and complete a quiz to see if they are the ultimate SmartyPants. Made in collaboration with Sam Sakhavarz.</p>
-                  <div class="portfolio__links">
-                     <a href="http://www.shielarosegandhi.com/smartypants/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
-                     <a href="https://github.com/ShielaroseGandhi/shielarose_gandhi_project4" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
+                  <!-- Desktop img -->
+                  <img class="portfolio__desktop" src="./assets/desktop.png" alt="">
+                  <!-- Phone img -->
+                  <img class="portfolio__mobile" src="./assets/harper-mobile.png" alt="screenshot of my project, Harper">
+                  <!-- Video -->
+                  <div class="portfolio__video-container">
+                     <video class="video" src="./assets/harper.mp4" preload="auto" poster="assets/harper-desktop.png" muted>
+                        <img src="./assets/harper-desktop.png" alt="screenshot of my project, Harper">
+                     </video>
                   </div>
                </div>
-            </div>
-            <div class="portfolio__project portfolio__project--4 portfolio__project--right">
-               <div class="portfolio__img-container">
-
-               </div>
-               <div class="portfolio__inner-content portfolio__inner-content--right">
+               <div class="portfolio__inner-content">
                   <h3 class="portfolio__h3">Harper</h3>
                   <p class="portfolio__checklist">PSD Conversion / HTML5 / SCSS / BEM / Flexbox / Responsive</p>
                   <p class="portfolio__description">Multi-page responsive client request. This website was built with BEM naming convention used throughout. 
@@ -150,7 +153,35 @@
                   </div>
                </div>
             </div>
-            <div class="portfolio__project portfolio__project--5">
+
+            <!-- Project - SmartyPants -->
+            <div class="portfolio__project portfolio__project--4 portfolio__project--right">
+               <div class="portfolio__img-container">
+                  <!-- Desktop img -->
+                  <img class="portfolio__desktop" src="./assets/desktop.png" alt="">
+                  <!-- Phone img -->
+                  <img class="portfolio__mobile portfolio__mobile--left" src="./assets/smartypants-mobile.png" alt="screenshot of my quiz, smartypants, on a cell phone">
+                  <!-- Video -->
+                  <div class="portfolio__video-container">
+                     <video class="video" src="./assets/smartypants.mp4" preload="auto" poster="assets/smartypants-desktop.png"
+                        muted>
+                        <img src="./assets/smartypants-desktop.png" alt="screenshot of my quiz, smartypants">
+                     </video>
+                  </div>
+               </div>
+               <div class="portfolio__inner-content portfolio__inner-content--right">
+                  <h3 class="portfolio__h3">SmartyPants</h3>
+                  <p class="portfolio__checklist">JavaScript / jQuery / API / HTML5 / SCSS / Pair Programming / Responsive</p>
+                  <p class="portfolio__description">Using the OpenTrivia API, users may choose a category and complete a quiz to
+                     see if they are the ultimate SmartyPants. Made in collaboration with <a href="http://samsakhavarz.com/" class="group-members" target="_blank">Sam Sakhavarz</a>.</p>
+                  <div class="portfolio__links">
+                     <a href="http://www.shielarosegandhi.com/smartypants/" target="_blank" class="portfolio__a portfolio__links--live">Live</a>
+                     <a href="https://github.com/ShielaroseGandhi/project4-shielarose-sam" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- <div class="portfolio__project portfolio__project--5">
                <div class="portfolio__img-container">
 
                </div>
@@ -163,7 +194,7 @@
                      <a href="https://github.com/ShielaroseGandhi/shielarose_gandhi_project5" target="_blank" class="portfolio__a portfolio__links--github">GitHub</a>
                   </div>
                </div>
-            </div>
+            </div> -->
          </div>
       </section>
 

@@ -22,16 +22,13 @@ $(function(){
       callback: function() {}
    });
 
-   // play video on hover of the image 
-   $(".portfolio__screenshot").hover(function(){
-      $(this).addClass("hidden"),
-      $("video").removeClass("hidden")
-   })
+   $('video').hover(function(){
+      $(this)[0].play()
+   });
 
    // once video has ended, add portrait img on top again
-   $('video').on('ended', function () {
-      $(this).addClass("hidden"),
-      $(".portfolio__screenshot").removeClass("hidden")
+   $('video').on('ended', function(){
+      $(this)[0].load()
    });
 
 });
