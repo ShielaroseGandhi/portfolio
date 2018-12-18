@@ -48,12 +48,12 @@
    }
    &__mobile {
       position: absolute;
-      bottom: 10px;
-      right: 0;
+      bottom: 0px;
+      right: -35px;
       width: 90px;
       z-index: 1;
       &--left {
-         left: 0;
+         left: -35px;
       }
    }
    &__video-container {
