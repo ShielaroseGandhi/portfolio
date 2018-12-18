@@ -781,3 +781,79 @@ video {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1); }
+
+.skills {
+  position: relative; }
+  .skills:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    border-width: 100px 0 0 100vw;
+    border-style: solid;
+    border-color: transparent transparent transparent whitesmoke; }
+  .skills__h2 {
+    margin: 35px 0 100px 0;
+    position: relative; }
+    .skills__h2:before {
+      content: "toolbox";
+      font-family: 'Montserrat', sans-serif;
+      font-size: 170px;
+      font-size: 17rem;
+      color: #1f0e49;
+      color: #cae4f1;
+      position: absolute;
+      top: -110px;
+      left: 0;
+      z-index: -1;
+      opacity: 0.3; }
+  .skills__icons {
+    max-width: 700px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .skills .icon {
+    height: 100px;
+    min-width: 100px;
+    width: calc((100% / 6) - 15px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    position: relative; }
+    .skills .icon:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: whitesmoke;
+      opacity: 0.4; }
+    .skills .icon img {
+      width: 50%;
+      position: relative;
+      z-index: 1; }
+  .skills .icon-color1 {
+    background: #ffb4a4; }
+  .skills .icon-color2 {
+    background: #fcdc89; }
+  .skills .icon-color3 {
+    background: #cae4f1; }
+  .skills .icon-color4 {
+    background: #ddd6f3; }
