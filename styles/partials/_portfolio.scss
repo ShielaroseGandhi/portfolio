@@ -149,30 +149,10 @@ video {
    }
 }
 
-// .shapes--squiggle {
-//    position: relative;
-//    top: -45px;
-//    left: 50%;
-//    transform: translateX(-50%) rotate(-90deg);
-//    width: 70px; 
-//    height: 11px; 
-//    opacity: 0.5;
-//    z-index: 10;
-//    overflow: hidden;
-//    .line {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       width: 80px;
-//       height: 11px;
-//    }
-//    .line1 {
-//       background: linear-gradient(45deg, transparent, transparent 47%, $primary 47%, transparent 53%);
-//    }
-//    .line2 {
-//       background: linear-gradient(-45deg, transparent, transparent 47%, $primary 47%, transparent 53%);
-//    }
-//    .line {
-//       background-size: 20px 20px;
-//    }
-// }
+.hidden {
+   display: none;
+   position: absolute;
+   top: 28px;
+   left: 22px;
+   width: 90%;
+}

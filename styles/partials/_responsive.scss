@@ -1,0 +1,685 @@
+@media(max-width: 1200px){
+   // Header 
+   .header {
+      &__shapes {
+         &--squiggle{
+            top: -190px;
+            left: 40px;
+         }
+      }
+   }
+
+   // Portfolio
+   .portfolio {
+      &__project {
+         @include flex(column);
+         justify-content: center;
+         align-items: center;
+         margin: 0 0 100px 0;
+         text-align: center;
+      }
+      &__inner-content {
+         align-items: center;
+         min-width: 65%;
+         padding: 0;
+      }
+      &__img-container {
+         margin-bottom: 35px;
+      }
+   }
+}
+
+@media(max-width: 1024px){
+   // Header 
+   .header {
+      &__shapes {
+         &--squiggle {
+            top: -220px;
+            left: 40px;
+         }
+         &--circle {
+            top: 190px;
+            left: 290px;
+         }
+         &--square {
+            top: 200px;
+            left: 750px;
+         }
+         &--triangle {
+            top: 0px;
+            left: 650px;
+         }
+      }
+   }
+}
+
+@media(max-width: 960px){
+   // Header 
+   .header {
+      &__h1 {
+         @include heading-font(80);
+      }
+      &__intro,
+      &__description {
+         @include body-font(25);
+      }
+   }
+
+   // Nav
+   .main-nav {
+      input:checked + &__circle {
+         box-shadow: 0 0 0 60vw $accent3, 0 0 0 85vh $accent3;
+      }
+   }
+
+   //About 
+   .about {
+      &__description {
+         width: 70%;
+      }
+      &__img-container {
+         width: 30%;
+      }
+   }
+
+   // before elements on h2's for each section
+   .about__h2,
+   .portfolio__h2,
+   .skills__h2,
+   .contact__h2 {
+      &::before {
+         font-size: 130px;
+         font-size: 13rem;
+      }
+   }
+
+   .about__h2::before,
+   .skills__h2::before,
+   .contact__h2::before {
+      top: -75px;
+   }
+
+   .portfolio__h2::before {
+      top: -30px;
+   }
+}
+
+@media(max-width: 855px){
+    // Header 
+   .header {
+      &__h1 {
+         @include heading-font(68);
+         &::after {
+            height: 30px;
+         }
+      }
+   }
+
+   // Nav 
+   .main-nav {
+      &__menu {
+         left: 50%;
+      }
+      input:checked + &__circle {
+         box-shadow: 0 0 0 120vw $accent3, 0 0 0 120vh $accent3;
+         overflow: hidden;
+      }
+   }
+
+   // About 
+   .about {
+      &__inner-content {
+         @include flex(column-reverse);
+      }
+      &__img-container {
+         width: 40%;
+      }
+      &__description {
+         width: 85%;
+         padding: 0;
+      }
+   }
+
+   // Portfolio 
+   .portfolio {
+      &__inner-content {
+         min-width: 80%;
+      }
+   }
+
+   // Toolbox 
+   .skills {
+      &__icon-box {
+         width: calc((100% / 4) - 25px);
+      }
+   }
+}
+
+@media(max-width: 768px){
+   // Header 
+   .header {
+      &__h1 {
+         @include heading-font(60);
+         &::before {
+            width: 350px;
+            height: 350px;
+         }
+         &::after {
+            height: 30px;
+         }
+      }
+      &__intro,
+      &__description {
+         @include body-font(22);
+      }
+      &__shapes {
+         &--squiggle {
+            top: -220px;
+            left: 40px;
+         }
+         &--circle {
+            top: 130px;
+            left: 240px;
+         }
+         &--square {
+            top: 150px;
+            left: 600px;
+         }
+         &--triangle {
+            top: -30px;
+            left: 490px;
+         }
+      }
+   }
+}
+
+@media(max-width: 710px){
+   // before elements on h2's for each section
+   .about__h2,
+   .portfolio__h2,
+   .skills__h2,
+   .contact__h2 {
+      &::before {
+         font-size: 110px;
+         font-size: 11rem;
+      }
+   }
+
+   .about__h2::before,
+   .skills__h2::before,
+   .contact__h2::before {
+      top: -60px;
+   }
+
+   .portfolio__h2::before {
+      top: -10px;
+   }
+}
+
+@media(max-width: 640px){
+   // Header 
+   .header {
+      &__h1 {
+         @include heading-font(70);
+         &::before {
+            top: -150px;
+            left: -50px;
+            width: 300px;
+            height: 300px;
+         }
+      }
+      &__intro,
+      &__description {
+         width: 80%;
+         @include body-font(20);
+         margin: 0 auto;
+      }
+      &__shapes {
+         &--squiggle {
+            top: -190px;
+            left: 40px;
+         }
+         &--circle {
+            top: 130px;
+            left: 100px;
+         }
+         &--square {
+            top: 210px;
+            left: 480px;
+         }
+         &--triangle {
+            top: -30px;
+            left: 390px;
+         }
+      }
+   }
+
+   // Nav
+   .main-nav {
+      &__menu--link {
+         font-size: 25px;
+         font-size: 2.5rem;
+         margin-bottom: 10px;
+         padding: 10px 40px;
+      }
+   }
+
+    // About 
+   .about {
+      &__img-container {
+         width: 45%;
+      }
+   }
+}
+
+@media(max-width: 600px){
+   // About 
+   .about {
+      &__img-container {
+         display: none;
+      }
+      &__description {
+         min-width: 100%;
+      }
+   }
+
+   //Portfolio - remove videos
+   .portfolio {
+      &__h3 {
+         font-size: 2.5rem;
+         font-size: 25px;
+      }
+      &__a {
+         font-size: 1.6rem;
+         font-size: 16px;
+      }
+      &__video-container {
+         display: none;
+      }
+      .hidden {
+         display: block;
+         top: 25px;
+         left: 19px;
+         width: 90%;
+      }
+      &__img-container {
+         position: relative;
+         min-width: 400px;
+         max-width: 400px;
+      }
+   }
+
+   //Contact
+   .contact {
+      &__inner-content {
+         flex-direction: column;
+      }
+      &__social {
+         position: static;
+         flex-direction: row;
+         justify-content: space-around;
+         width: 50%;
+         margin-bottom: 20px;
+      }
+      &__icon {
+         margin-bottom: 0;
+         &--link .fab {
+            font-size: 2.5rem;
+            font-size: 25px; 
+         }
+      }  
+      &__form {
+         width: 90%;
+      }
+   }
+
+   // before elements on h2's for each section
+   .about__h2,
+   .portfolio__h2,
+   .skills__h2,
+   .contact__h2 {
+      font-size: 3.5rem;
+      font-size: 35px;
+      &::before {
+         font-size: 90px;
+         font-size: 9rem;
+      }
+   }
+
+   .about__h2::before,
+   .skills__h2::before,
+   .contact__h2::before {
+      top: -50px;
+   }
+
+   .portfolio__h2::before {
+      top: 0px;
+   }
+}
+
+@media(max-width: 555px){
+   //Portfolio
+   .portfolio {
+      .hidden {
+         top: 22px;
+         left: 17px;
+         width: 90%;
+      }
+      &__img-container {
+         position: relative;
+         min-width: 350px;
+         max-width: 350px;
+         
+      }
+      &__mobile {
+         right: -25px;
+         width: 80px;
+         z-index: 1;
+         &--left {
+            left: -25px;
+         }
+      }
+   }
+}
+
+@media(max-width: 500px){
+   // Header
+   .header {
+      &__h1 {
+         @include heading-font(60);
+      }
+      &__intro,
+      &__description {
+         @include body-font(19);
+      }
+      &__shapes {
+         &--circle {
+            top: 120px;
+            left: 75px;
+         }
+         &--square {
+            top: 180px;
+            left: 360px;
+         }
+         &--triangle {
+            top: -30px;
+            left: 270px;
+         }
+      }
+   }
+
+   // Nav
+   .main-nav {
+      &__circle {
+         right: -110px;
+         top: -110px;
+      }
+      &__hamburger {
+         top: 140px;
+         left: 42px;
+         width: 25px;
+         height: 2px;
+         background: #000;
+         display: block;
+         transform-origin: center;
+         transition: .5s ease-in-out;
+         border-radius: 50px;
+      }
+   }
+
+   // Portfolio 
+   .portfolio {
+      .hidden {
+         top: 19px;
+         left: 14px;
+         width: 90%;
+      }
+      &__img-container {
+         position: relative;
+         min-width: 300px;
+         max-width: 300px;         
+      }
+      &__mobile {
+         right: -25px;
+         width: 72px;
+         z-index: 1;
+         &--left {
+            left: -25px;
+         }
+      }
+      &__inner-content {
+         min-width: 100%;
+      }
+   }
+
+   // Toolbox 
+   .skills {
+       &__icon-box {
+         height: 80px;
+         min-width: 80px;
+      }
+      &__card p {
+         font-size: 1.4rem;
+         font-size: 14px;
+      }
+   }
+
+   .contact__form {
+      width: 100%;
+   }
+
+   // before elements on h2's for each section
+   .about__h2,
+   .portfolio__h2,
+   .skills__h2,
+   .contact__h2 {
+      font-size: 2.9rem;
+      font-size: 29px;
+      &::before {
+         font-size: 70px;
+         font-size: 7rem;
+      }
+   }
+
+   .about__h2::before,
+   .skills__h2::before,
+   .contact__h2::before {
+      top: -35px;
+   }
+
+   .portfolio__h2::before {
+      top: 15px;
+   }
+}
+
+@media(max-width: 435px){
+    // Header
+   .header {
+      &__h1 {
+         @include heading-font(50);
+         &::before {
+            top: -150px;
+            left: -50px;
+            width: 250px;
+            height: 250px;
+         }
+      }
+      &__intro,
+      &__description {
+         @include body-font(17);
+      }
+      &__shapes {
+         &--triangle {
+            border-left: 10px solid transparent; 
+            border-right: 10px solid transparent; 
+            border-bottom: 15px solid $primary;
+            top: -40px;
+            left: 240px;
+         }
+         &--circle, 
+         &--square {
+            width: 15px; 
+            height: 15px; 
+         }
+         &--squiggle{
+            width: 50px; 
+            height: 6px; 
+         }
+         .line {
+            width: 48px;
+            height: 6px;
+         }
+         .line1 {
+            background: linear-gradient(45deg, transparent, transparent 47%, $secondary 47%, transparent 53%);
+         }
+         .line2 {
+            background: linear-gradient(-45deg, transparent, transparent 47%, $secondary 47%, transparent 53%);
+         }
+         .line {
+            background-size: 12px 12px;
+         }
+         &--circle {
+            top: 100px;
+            left: 65px;
+         }
+         &--square {
+            top: 140px;
+            left: 300px;
+         }
+      }
+   }
+}
+
+@media(max-width: 400px){
+   // Header
+   .header {
+      &__h1::before {
+         top: -100px;
+         left: -50px;
+         width: 200px;
+         height: 200px;
+      }
+      &__h1::after {
+         height: 20px;
+      }
+      &__intro,
+      &__description {
+         display: none;
+      }
+      &__shapes {
+         &--squiggle {
+            top: -180px;
+            left: 40px;
+         }
+         &--circle {
+            top: 120px;
+            left: 75px;
+         }
+         &--square {
+            top: 150px;
+            left: 280px;
+         }
+         &--triangle {
+            top: -80px;
+            left: 270px;
+         }
+      }
+   }
+
+   // Portfolio 
+   .portfolio {
+      .hidden {
+         top: 17px;
+         left: 14px;
+      }
+      &__img-container {
+         min-width: 275px;
+         max-width: 275px;         
+      }
+      &__mobile {
+         right: -20px;
+         width: 60px;
+         &--left {
+            left: -20px;
+         }
+      }
+      &__inner-content {
+         min-width: 100%;
+      }
+      &__h3 {
+         font-size: 2.2rem;
+         font-size: 22px;
+      }
+   }
+
+   // Toolbox
+   .skills {
+       &__icon-box {
+         height: 60px;
+         min-width: 60px;
+      }
+      &__card p {
+         font-size: 1rem;
+         font-size: 10px;
+      }
+   }
+
+   // Contact 
+   .about__h2,
+   .portfolio__h2,
+   .contact__h2 {
+      margin-top: 0;
+   }
+
+   // before elements on h2's for each section
+   .about__h2,
+   .portfolio__h2,
+   .skills__h2,
+   .contact__h2 {
+      &::before {
+         font-size: 55px;
+         font-size: 5.5rem;
+      }
+   }
+
+   .about__h2::before,
+   .skills__h2::before,
+   .contact__h2::before,
+   .portfolio__h2::before {
+      top: -20px;
+   }
+
+   // Global Styles 
+   section {
+      padding: 25px 0 67.5px 0;
+   }
+}
+
+@media(max-width: 350px){
+   // Portfolio 
+   .portfolio {
+      .hidden {
+         top: 15px;
+         left: 12px;
+      }
+      &__img-container {
+         min-width: 250px;
+         max-width: 250px;         
+      }
+      &__mobile {
+         right: -15px;
+         width: 55px;
+         &--left {
+            left: -15px;
+         }
+      }
+   }
+
+   // Toolbox
+   .skills {
+       &__icon-box {
+         height: 55px;
+         min-width: 55px;
+      }
+   }
+}
