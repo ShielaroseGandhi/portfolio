@@ -37,8 +37,20 @@
    }
    &__description {
       @include body-font(16);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       line-height: 1.5;
-      width: 75%;
+      width: 65%;
       padding-right: 35px;
+      p {
+         margin-top: 0;
+      }
+   }
+   &__button {
+      @include button($secondary);
+      @include body-font(16);
+      width: 30%;
+      margin-top: 15px;
    }
 }
