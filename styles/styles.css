@@ -309,16 +309,16 @@ input:checked + .main-nav__circle + .main-nav__menu {
     margin-bottom: 15px;
     padding: 15px 40px;
     color: #1f0e49; }
-    .main-nav__menu--link:hover:after {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      width: 40px;
-      height: 40px;
-      background: #ffb4a4;
-      border-radius: 64% 36% 26% 74% / 40% 63% 37% 60%;
-      z-index: -1; }
+  .main-nav__menu .hover:hover::after, .main-nav__menu .hoverfocus::after, .main-nav__menu .hover:active::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: #ffb4a4;
+    border-radius: 64% 36% 26% 74% / 40% 63% 37% 60%;
+    z-index: -1; }
 
 .header {
   display: -webkit-box;
@@ -934,15 +934,15 @@ video {
     .skills__card--back {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg); }
-    .skills__card:hover .skills__card--front,
-    .skills__card:focus .skills__card--front {
-      z-index: 0;
-      -webkit-transform: rotateY(-180deg);
-      transform: rotateY(-180deg); }
-    .skills__card:hover .skills__card--back,
-    .skills__card:focus .skills__card--back {
-      -webkit-transform: rotateY(0);
-      transform: rotateY(0); }
+  .skills .hover:hover .skills .hover--front,
+  .skills .hover:focus .skills .hover--front {
+    z-index: 0;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg); }
+  .skills .hover:hover .skills .hover--back,
+  .skills .hover:focus .skills .hover--back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
   .skills .icon {
     height: 100px;
     min-width: 100px;

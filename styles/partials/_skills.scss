@@ -94,6 +94,8 @@
       &--back {
          transform: rotateY(180deg);
       }
+   }
+   .hover {
       &:hover &--front,
       &:focus &--front {
          z-index: 0;

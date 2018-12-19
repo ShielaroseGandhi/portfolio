@@ -88,17 +88,21 @@ nav {
          margin-bottom: 15px;
          padding: 15px 40px;
          color: $secondary;
-         &:hover:after {
-            content: "";
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            width: 40px;
-            height: 40px;
-            background: $accent1; 
-            border-radius: 64% 36% 26% 74% / 40% 63% 37% 60%;
-            z-index: -1;
-         }
+      }
+      .hover {
+        &:hover::after,
+        &focus::after,
+        &:active::after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          width: 40px;
+          height: 40px;
+          background: $accent1; 
+          border-radius: 64% 36% 26% 74% / 40% 63% 37% 60%;
+          z-index: -1;
+        }
       }
    }
 

@@ -21,9 +21,10 @@ $(function(){
       $("input[type=checkbox]").prop("checked", false)
    })
    
+   // smooth scroll
    $('a').smoothScroll();
    
-
+   // play video on hover 
    $('video').hover(function(){
       $(this)[0].play()
    });
@@ -31,6 +32,19 @@ $(function(){
    // once video has ended, add portrait img on top again
    $('video').on('ended', function(){
       $(this)[0].load()
+   });
+
+   //remove hover on touchscreen devices
+   window.addEventListener('touchstart', function(){
+      $(".main-nav__menu--link").removeClass("hover");
+      $(".skills__card").removeClass("hover");
+   });
+
+   // stop horizontal scroll - for safari
+   let offset = window.pageXOffset;
+   $(window).scroll(function() {
+      if (offset != window.pageXOffset)
+         window.scrollTo(0, window.pageYOffset);
    });
 
 });
