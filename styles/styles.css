@@ -1456,6 +1456,9 @@ footer {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     border-radius: 50px; }
+  .about__button {
+    width: 50%;
+    margin-bottom: 50px; }
   .portfolio .hidden {
     top: 19px;
     left: 14px;
