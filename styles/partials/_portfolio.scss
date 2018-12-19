@@ -31,20 +31,23 @@
    }
    &__project {
       @include flex(row-reverse);
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
       width: 100%;
       margin: 50px 0;
+      text-align: right;
       &--right {
          flex-direction: row;
-         text-align: right;
-         align-items: center;
+         text-align: left;
+         align-items: flex-start;
       }
    }
    &__img-container {
       position: relative;
       margin: 0;
-      max-width: 400px;
+      min-width: 450px;
+      max-width: 450px;
    }
    &__mobile {
       position: absolute;
@@ -58,8 +61,8 @@
    }
    &__video-container {
       position: absolute;
-      top: 26px;
-      left: 19px;
+      top: 29px;
+      left: 21px;
       max-width: 597px;
       max-height: 342px;
       width: 90.13%;
@@ -67,12 +70,13 @@
    }
    &__inner-content {
       @include flex(column);
-      align-items: flex-start;
+      align-items: flex-end;
       justify-content: space-between;
-      max-width: calc(100% - 450px);
-      padding-right: 50px;
+      min-width: 50%;
+      max-width: calc(100% - 480px);
+      padding-right: 30px;
       &--right {
-         align-items: flex-end;
+         align-items: flex-start;
          padding-right: 0;
          padding-left: 50px;
       }

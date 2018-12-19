@@ -33,27 +33,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
    }
    &__social {
+      position: absolute;
+      text-align: right;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
+      flex-direction: column;
+      width: 100%;
    }
    &__icon {
-      text-align: center;
-      width: 25%;
-      margin-right: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
       &--link .fab {
          font-size: 30px;   
          color: $black; 
+         transition: all 0.3s ease;
+         &:hover {
+            color: $primary;
+         }
       }
    }
    &__form {
       display: flex;
-      width: 75%;
+      width: 80%;
       flex-direction: column;
       @include body-font(16);
    }

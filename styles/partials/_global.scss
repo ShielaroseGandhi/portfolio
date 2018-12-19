@@ -5,8 +5,8 @@ body {
 }
 
 .wrapper {
-   max-width: 1280px;
-   width: 80%;
+   max-width: 1080px;
+   width: 75%;
    margin: 0 auto;
 }
 
@@ -25,6 +25,6 @@ h3 {
 }
 
 p {
-   @include body-font(17);
+   @include body-font(16);
    line-height: 1.5;
 }

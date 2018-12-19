@@ -11,14 +11,14 @@
    }
    &__content {
       @include flex(row);
+      justify-content: space-between;
    }
    &__img-container {
       width: 25%;
-      float: left;
    }
    &__inner-content {
-      width: 75%;
-      padding-right: 50px;
+      width: 70%;
+      padding-right: 75px;
       text-align: left;
       position: relative;
    }
