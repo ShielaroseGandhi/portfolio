@@ -96,14 +96,14 @@
       }
    }
    .hover {
-      &:hover &--front,
-      &:focus &--front {
+      &:hover .skills__card--front,
+      &:focus .skills__card--front {
          z-index: 0;
          transform: rotateY(-180deg);
       }
       
-      &:hover &--back,
-      &:focus &--back {
+      &:hover .skills__card--back,
+      &:focus .skills__card--back {
          transform: rotateY(0);
       }
    }
