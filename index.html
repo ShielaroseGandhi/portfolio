@@ -10,6 +10,7 @@
    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -52,9 +53,9 @@
          </div>
       </div>
       <div class="header__content">
-         <p class="header__intro">Hello! My name is</p>
-         <h1 class="header__h1">Shielarose Gandhi.</h1>
-         <p class="header__description typed"></p>
+         <p class="header__intro" data-aos="fade-right" data-aos-duration="1500">Hello! My name is</p>
+         <h1 class="header__h1" data-aos="fade-up" data-aos-duration="2250">Shielarose Gandhi.</h1>
+         <p class="header__description typed" data-aos="fade-left" data-aos-duration="1500"></p>
       </div>
    </header>
 
@@ -63,8 +64,19 @@
       <!-- ABOUT SECTION -->
       <section class="about" id="about">
          <div class="wrapper about__content">
-            <h2 class="about__h2">about me</h2>
-            <div class="about__inner-content">
+            <h2 
+               class="about__h2" 
+               data-aos="fade-right" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="-75">about me
+            </h2>
+            <div 
+               class="about__inner-content"
+               data-aos="fade-left" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="-75">
                <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in iste inventore et vero necessitatibus numquam velit! Harum vitae culpa laudantium, voluptate ipsa iusto minus fugiat quibusdam quos ratione amet illum nam voluptatibus aliquid error maxime quis provident laboriosam recusandae fuga impedit cupiditate in. Officia in consequuntur nam, corporis illo cumque reprehenderit tempora distinctio unde fugit voluptatibus quo ea ratione accusantium placeat. Quod minima consequuntur nihil, sequi cupiditate accusamus corrupti a alias esse, et nulla harum quisquam quasi natus unde fuga tempora? In nesciunt sint doloribus quam dolores quia ducimus sed quo assumenda nobis! Sapiente minima dolorum modi consequuntur iste!</p>
                <div class="about__img-container">
                   <img src="./assets/old-headshot2.png" alt="A headshot of me." class="about__img">
@@ -81,10 +93,21 @@
       <!-- PORTFOLIO -->
       <section class="portfolio" id="portfolio">
          <div class="wrapper portfolio__content">
-            <h2 class="portfolio__h2">portfolio</h2>
+            <h2 
+               class="portfolio__h2"
+               data-aos="fade-left" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="-75">portfolio
+            </h2>
 
             <!-- Project - Meteor -->
-            <div class="portfolio__project portfolio__project--1">
+            <div 
+               class="portfolio__project portfolio__project--1"
+               data-aos="fade-up" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="100">
                <!-- Image with video -->
                <div class="portfolio__img-container">
                   <!-- Desktop img -->
@@ -115,7 +138,12 @@
             </div>
 
             <!-- Project - gofundmywedding -->
-            <div class="portfolio__project portfolio__project--2 portfolio__project--right">
+            <div 
+               class="portfolio__project portfolio__project--2 portfolio__project--right"
+               data-aos="fade-up" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="0">
                <div class="portfolio__img-container">
                   <!-- Desktop img -->
                   <img class="portfolio__desktop" src="./assets/desktop.png" alt="">
@@ -145,7 +173,12 @@
             </div>
 
             <!-- Project - Harper -->
-            <div class="portfolio__project portfolio__project--3">
+            <div 
+               class="portfolio__project portfolio__project--3"
+               data-aos="fade-up" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="0">
                <div class="portfolio__img-container">
                   <!-- Desktop img -->
                   <img class="portfolio__desktop" src="./assets/desktop.png" alt="">
@@ -178,7 +211,12 @@
             </div>
 
             <!-- Project - SmartyPants -->
-            <div class="portfolio__project portfolio__project--4 portfolio__project--right">
+            <div 
+               class="portfolio__project portfolio__project--4 portfolio__project--right"
+               data-aos="fade-up" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="0">
                <div class="portfolio__img-container">
                   <!-- Desktop img -->
                   <img class="portfolio__desktop" src="./assets/desktop.png" alt="">
@@ -213,10 +251,21 @@
       <!-- TOOLBOX -->
       <section class="skills" id="skills">
          <div class="wrapper skills__content">
-            <h2 class="skills__h2">toolbox</h2>
+            <h2 
+               class="skills__h2"
+               data-aos="fade-right" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="-75">toolbox
+            </h2>
             <ul class="skills__icons">
                <!-- HTML Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color1">
                         <img src="./assets/icons/html.png" alt="html icon.">
@@ -228,7 +277,12 @@
                </li>
 
                <!-- CSS Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color2">
                         <img src="./assets/icons/css3.png" alt="css icon.">
@@ -240,7 +294,12 @@
                </li>
 
                <!-- JS Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color3">
                         <img src="./assets/icons/js.png" alt="JavaScript icon.">
@@ -252,7 +311,12 @@
                </li>
 
                <!-- jQuery Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color4">
                         <img src="./assets/icons/jquery.png" alt="jQuery icon.">
@@ -264,7 +328,12 @@
                </li>
 
                <!-- SASS Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color1">
                         <img src="./assets/icons/sass.png" alt="sass icon.">
@@ -276,7 +345,12 @@
                </li>
 
                <!-- React Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color2">
                         <img src="./assets/icons/react.png" alt="react icon.">
@@ -288,7 +362,12 @@
                </li>
                
                <!-- Git Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color3 ">
                         <img src="./assets/icons/git.png" alt="Git icon.">
@@ -300,7 +379,12 @@
                </li>
                
                <!-- Github Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color4">
                         <img src="./assets/icons/github.png" alt="github icon.">
@@ -312,7 +396,12 @@
                </li>
 
                <!-- Firebase Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color1">
                         <img src="./assets/icons/firebase.png" alt="firebase icon.">
@@ -324,7 +413,12 @@
                </li>
                
                <!-- VS Code Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color2">
                         <img src="./assets/icons/vscode.png" alt="VS Code icon.">
@@ -336,7 +430,12 @@
                </li>
                
                <!-- Responsive Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color3">
                         <img src="./assets/icons/responsive.png" alt="Responsive web design icon.">
@@ -348,7 +447,12 @@
                </li>
                
                <!-- iTerm2 Box -->
-               <li class="skills__icon-box">
+               <li 
+                  class="skills__icon-box"
+                  data-aos="flip-right" 
+                  data-aos-duration="700" 
+                  data-aos-easing="linear"
+                  data-aos-offset="100">
                   <div class="skills__card hover">
                      <div class="skills__card--face skills__card--front skills__card--color4">
                         <img src="./assets/icons/iterm2.png" alt="iTerm2 icon.">
@@ -366,8 +470,19 @@
       <!-- CONTACT SECTION -->
       <section class="contact" id="contact">
          <div class="wrapper contact__content">
-            <h2 class="contact__h2">contact</h2>
-            <div class="contact__inner-content">
+            <h2 
+               class="contact__h2"
+               data-aos="fade-left" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="-75">contact
+            </h2>
+            <div 
+               class="contact__inner-content"
+               data-aos="fade-up" 
+               data-aos-duration="700" 
+               data-aos-easing="linear"
+               data-aos-offset="-75">
                <ul class="contact__social">
                   <li class="contact__icon">
                      <a href="https://twitter.com/shielarosee" class="contact__icon--link" target="_blank">
@@ -418,6 +533,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="scripts/script.js"></script>
 </body>
 </html>

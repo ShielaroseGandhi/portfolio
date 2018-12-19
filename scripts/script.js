@@ -2,7 +2,7 @@
 let typed = new Typed(".typed", {
    strings: ["I'm a front-end web developer"],
    stringsElement: null,
-   startDelay: 1000,
+   startDelay: 2000,
    typeSpeed: 50,
    backSpeed: 50,
    smartBackspace: true,
@@ -20,9 +20,14 @@ $(function(){
    $(".main-nav__menu--link").on("click", function(){
       $("input[type=checkbox]").prop("checked", false)
    })
-   
+
    // smooth scroll
    $('a').smoothScroll();
+   
+   // animate on scroll
+   AOS.init({
+      // once: true,
+   });
    
    // play video on hover 
    $('video').hover(function(){
