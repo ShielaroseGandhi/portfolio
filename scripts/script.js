@@ -81,7 +81,7 @@ $(function(){
          $(".error").remove()
          if (name.length < 1) {
             e.preventDefault();
-            $("#name").after(`<span class="error">Please enter your name</span>`)
+            $("#name").after(`<span class="error">This field is required</span>`)
             $("#name").addClass("contact__input--error")
          } else if (!validName){
             e.preventDefault();
@@ -99,7 +99,7 @@ $(function(){
             $("#email").addClass("contact__input--error")
          } else if (!validEmail) {
             e.preventDefault();
-            $("#email").after(`<span class="error">Enter a valid email</span>`);
+            $("#email").after(`<span class="error">Please enter a valid email</span>`);
             $("#email").addClass("contact__input--error")
          }
       })
