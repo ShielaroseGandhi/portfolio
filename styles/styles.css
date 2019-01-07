@@ -1134,6 +1134,11 @@ video {
         left: 5px;
         -webkit-box-shadow: none;
         box-shadow: none; }
+    .contact__input--error {
+      border-color: red; }
+
+.error {
+  color: red; }
 
 footer {
   background: rgba(221, 214, 243, 0.2); }

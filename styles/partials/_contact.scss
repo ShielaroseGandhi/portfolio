@@ -80,5 +80,12 @@
          width: 100%;
          border: none;
       }
+      &--error {
+         border-color: red;
+      }
    }
+}
+
+.error {
+   color: red;
 }
