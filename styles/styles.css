@@ -1138,7 +1138,8 @@ video {
       border-color: red; }
 
 .error {
-  color: red; }
+  color: red;
+  font-size: 1.4rem; }
 
 footer {
   background: rgba(221, 214, 243, 0.2); }
